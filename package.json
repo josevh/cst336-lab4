@@ -1,0 +1,12 @@
+{
+    "name": "cst336-lab1",
+    "version": "1.0.0",
+    "description": "CST336 - Lab 1",
+    "scripts": {
+        "start": "serve"
+    },
+    "dependencies": {
+        "serve": "^11.3.2"
+    },
+    "author": "Jose Herrera Gallegos"
+}
