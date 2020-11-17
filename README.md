@@ -15,4 +15,4 @@ Please, include your link to your Github repo as part of your submission (**make
 
 -----
 
-> Due date	Sunday, November 22, 2020, 11:55 PM
+**Due date**: Sunday, November 22, 2020, 11:55 PM
