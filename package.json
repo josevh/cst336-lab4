@@ -4,11 +4,14 @@
     "description": "CST336 - Lab 4",
     "main": "app.js",
     "scripts": {
-        "dev": "IP=0.0.0.0 PORT=5000 node app.js"
+        "dev": "IP=0.0.0.0 PORT=5000 nodemon app.js"
     },
     "dependencies": {
         "ejs": "^3.1.5",
         "express": "^4.17.1"
     },
-    "author": "Jose Herrera Gallegos"
+    "author": "Jose Herrera Gallegos",
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    }
 }
