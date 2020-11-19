@@ -1,6 +1,10 @@
 const express = require('express')
 const app = express()
 
+const VALID_PLANET_NAMES = [
+    "mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "neptune", "pluto"
+]
+
 app.engine("html", require("ejs").renderFile)
 app.use(express.static("public"))
 
@@ -10,11 +14,30 @@ app.get("/", function (req, res) {
 })
 
 app.get("/mercury", function(req, res) {
-    res.send("This will be the Mercury page!")
+    res.render(`mercury.html`, {planetName: 'Mercury'})
 })
 
 app.get("/venus", function(req, res) {
-    res.send("This will be the Venus page!")
+    res.render(`venus.html`, {planetName: 'Venus'})
+})
+
+app.get("/earth", function(req, res) {
+    res.render(`earth.html`, {planetName: 'Earth'})
+})
+
+// the rest of the planets, "5th" route for rubric
+app.get("/:planet", function(req, res) {
+    if (VALID_PLANET_NAMES.includes(req.params.planet)) {
+        // capitalize planet name
+        let planetName = req.params.planet.charAt(0).toUpperCase() + req.params.planet.slice(1)
+        res.render(`${req.params.planet}.html`, {planetName: planetName})
+    } else {
+        res.sendStatus(404)
+    }
+})
+
+app.get('*', function(req, res){
+    res.status(404).send('what???')
 })
 
 // starting server
