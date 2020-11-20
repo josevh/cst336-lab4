@@ -36,10 +36,6 @@ app.get("/:planet", function(req, res) {
     }
 })
 
-app.get('*', function(req, res){
-    res.status(404).send('what???')
-})
-
 // starting server
 app.listen(process.env.PORT, process.env.IP, function () {
     console.log("Express server is running at " + process.env.IP + ":" + process.env.PORT)
