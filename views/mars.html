@@ -1,7 +1,37 @@
 <%- include("partials/header.ejs") %>
-<h1>Welcome to the Solar System Site!</h1>
 
-<img src="/img/mars-11012_640.jpg" alt="Planet Mars">
-<div>Image by <a href="https://pixabay.com/users/wikiimages-1897/">WikiImages</a> from <a href="https://pixabay.com/">Pixabay</a></div>
+<div class="row">
+    <div class="col text-center">
+        <h1>Planet Mars</h1>
+        
+        <figure class="figure">
+            <img class="figure-img img-fluid rounded planet" src="/img/mars-11012_640.jpg" alt="Planet Mars">
+            <figcaption class="figure-caption text-right">Image by <a href="https://pixabay.com/users/wikiimages-1897/">WikiImages</a> from <a href="https://pixabay.com/">Pixabay</a></figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <p>The fourth planet from the Sun, Mars is a dusty, cold, desert world 
+            with a very thin atmosphere.</p>
+
+        <p>This dynamic planet has seasons, polar ice caps, canyons, extinct 
+            volcanoes, and evidence that it was even more active in the past.</p>
+        
+        <p>Mars is one of the most explored bodies in our solar system, and it's 
+            the only planet where we've sent rovers to roam the alien landscape. 
+            NASA currently has three spacecraft in orbit, and it has one rover 
+            and one lander on the surface. NASA launched the next-generation 
+            Perseverance rover to Mars on July 30, 2020. India and ESA have 
+            spacecraft in orbit above Mars. These robotic explorers have found 
+            lots of evidence that Mars was much wetter and warmer, with a 
+            thicker atmosphere, billions of years ago.</p>
+
+        <blockquote class="small">
+            <em>Source</em>: <a href="https://solarsystem.nasa.gov/planets/mars/overview/">Mars | Nasa Solar System Exploration</a>
+        </blockquote>
+    </div>
+</div>
 
 <%- include("partials/footer.ejs") %>

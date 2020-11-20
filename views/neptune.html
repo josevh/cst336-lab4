@@ -1,7 +1,33 @@
 <%- include("partials/header.ejs") %>
-<h1>Welcome to the Solar System Site!</h1>
 
-<img src="/img/neptune-67537_640.jpg" alt="Planet Neptune">
-<div>Image by <a href="https://pixabay.com/users/wikiimages-1897/">WikiImages</a> from <a href="https://pixabay.com/">Pixabay</a></div>
+<div class="row">
+    <div class="col text-center">
+        <h1>Planet Neptune</h1>
+        
+        <figure class="figure">
+            <img class="figure-img img-fluid rounded planet" src="/img/neptune-67537_640.jpg" alt="Planet Neptune">
+            <figcaption class="figure-caption text-right">Image by <a href="https://pixabay.com/users/wikiimages-1897/">WikiImages</a> from <a href="https://pixabay.com/">Pixabay</a></figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <p>Dark, cold and whipped by supersonic winds, ice giant Neptune is the 
+            eighth and most distant planet in our solar system.</p>
+
+        <p>More than 30 times as far from the Sun as Earth, Neptune is the only 
+            planet in our solar system not visible to the naked eye and the first 
+            predicted by mathematics before its discovery. In 2011 Neptune 
+            completed its first 165-year orbit since its discovery in 1846.</p>
+        
+        <p>NASA's Voyager 2 is the only spacecraft to have visited Neptune up 
+            close. It flew past in 1989 on its way out of the solar system.</p>
+
+        <blockquote class="small">
+            <em>Source</em>: <a href="https://solarsystem.nasa.gov/planets/neptune/overview/">Neptune | Nasa Solar System Exploration</a>
+        </blockquote>
+    </div>
+</div>
 
 <%- include("partials/footer.ejs") %>

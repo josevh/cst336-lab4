@@ -1,7 +1,31 @@
 <%- include("partials/header.ejs") %>
-<h1>Welcome to the Solar System Site!</h1>
 
-<img src="/img/mercury-11591_640.png" alt="Planet Mercury">
-<div>Image by <a href="https://pixabay.com/users/wikiimages-1897/">WikiImages</a> from <a href="https://pixabay.com/">Pixabay</a></div>
+<div class="row">
+    <div class="col text-center">
+        <h1>Planet Mercury</h1>
+        
+        <figure class="figure">
+            <img class="figure-img img-fluid rounded planet" src="/img/mercury-11591_640.png" alt="Planet Mercury">
+            <figcaption class="figure-caption text-right">Image by <a href="https://pixabay.com/users/wikiimages-1897/">WikiImages</a> from <a href="https://pixabay.com/">Pixabay</a></figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <p>The smallest planet in our solar system and nearest to the Sun, 
+            Mercury is only slightly larger than Earth's Moon.</p>
+
+        <p>From the surface of Mercury, the Sun would appear more than three 
+            times as large as it does when viewed from Earth, and the sunlight 
+            would be as much as seven times brighter. Despite its proximity to 
+            the Sun, Mercury is not the hottest planet in our solar system – 
+            that title belongs to nearby Venus, thanks to its dense atmosphere.</p>
+
+        <blockquote class="small">
+            <em>Source</em>: <a href="https://solarsystem.nasa.gov/planets/mercury/overview/">Mercury | Nasa Solar System Exploration</a>
+        </blockquote>
+    </div>
+</div>
 
 <%- include("partials/footer.ejs") %>

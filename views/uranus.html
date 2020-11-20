@@ -1,8 +1,33 @@
 <%- include("partials/header.ejs") %>
-<h1>Welcome to the Solar System Site!</h1>
 
-<img src="/img/uranus-11625_640.jpg" alt="Planet Uranus">
-<div>Image by <a href="https://pixabay.com/users/wikiimages-1897/">WikiImages</a> from <a href="https://pixabay.com/">Pixabay</a></div>
+<div class="row">
+    <div class="col text-center">
+        <h1>Planet Uranus</h1>
+        
+        <figure class="figure">
+            <img class="figure-img img-fluid rounded planet" src="/img/uranus-11625_640.jpg" alt="Planet Uranus">
+            <figcaption class="figure-caption text-right">Image by <a href="https://pixabay.com/users/wikiimages-1897/">WikiImages</a> from <a href="https://pixabay.com/">Pixabay</a></figcaption>
+        </figure>
+    </div>
+</div>
 
+<div class="row">
+    <div class="col">
+        <p>The first planet found with the aid of a telescope, Uranus was 
+            discovered in 1781 by astronomer William Herschel, although he 
+            originally thought it was either a comet or a star.</p>
+
+        <p>It was two years later that the object was universally accepted as a 
+            new planet, in part because of observations by astronomer Johann 
+            Elert Bode. Herschel tried unsuccessfully to name his discovery 
+            Georgium Sidus after King George III. Instead the scientific 
+            community accepted Bode's suggestion to name it Uranus, the Greek 
+            god of the sky, as suggested by Bode.</p>
+
+        <blockquote class="small">
+            <em>Source</em>: <a href="https://solarsystem.nasa.gov/planets/uranus/overview/">Uranus | Nasa Solar System Exploration</a>
+        </blockquote>
+    </div>
+</div>
 
 <%- include("partials/footer.ejs") %>
