@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 
+const IP = process.env.IP || '0.0.0.0'
+const PORT = process.env.PORT || 5000
+
 const VALID_PLANET_NAMES = [
     "mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "neptune", "pluto"
 ]
@@ -37,6 +40,6 @@ app.get("/:planet", function(req, res) {
 })
 
 // starting server
-app.listen(process.env.PORT, process.env.IP, function () {
-    console.log("Express server is running at " + process.env.IP + ":" + process.env.PORT)
+app.listen(PORT, IP, function () {
+    console.log("Express server is running at " + IP + ":" + PORT)
 })
